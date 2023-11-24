@@ -1,0 +1,15 @@
+ docker exec -it kafka_connect-mysql-1 bash
+
+ mysql -uroot -p fullcycle
+
+ show tables;
+
+ create table categories (id int auto_increment primary key, name varchar(255));
+
+ desc categories;
+
+ INSERT into categories (name) VALUES('Eletronicos');
+
+ select * from categories;
+ 
+ INSERT into categories (name) VALUES('Cozinha');
